@@ -14,8 +14,8 @@ services:
       - ~/.local/share/pnpm:/root/.local/share/pnpm
     environment:
       - DOCUMENT_ROOT=/var/www/html/public
-      - PUID=1000
-      - PGID=1000
+      - APP_UID=1000
+      - APP_GID=1000
     depends_on:
       - mysql
 
